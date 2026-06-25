@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhoshh QH | APSTI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+        
+        :root {
+            --primary: 0 122 255;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 border-b border-white/10 bg-black/70 backdrop-blur-lg">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-blue-600 rounded-2xl flex items-center justify-center text-xl font-bold heading-font">JQ</div>
+                <div>
+                    <span class="text-2xl font-bold heading-font tracking-tight">Jhoshh QH</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#inicio" class="hover:text-blue-400 transition-colors">Inicio</a>
+                <a href="#sobre" class="hover:text-blue-400 transition-colors">Sobre mí</a>
+                <a href="#servicios" class="hover:text-blue-400 transition-colors">Servicios</a>
+                <a href="#proyectos" class="hover:text-blue-400 transition-colors">Proyectos</a>
+                <a href="#contacto" class="hover:text-blue-400 transition-colors">Contacto</a>
+            </div>
+
+            <a href="#contacto" 
+               class="px-6 py-3 bg-white text-black rounded-2xl font-semibold hover:bg-blue-600 hover:text-white transition-all text-sm">
+                Hablemos
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="inicio" class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-2 bg-white/10 px-5 py-2 rounded-full text-sm">
+                    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                    Disponible para nuevos proyectos
+                </div>
+                
+                <h1 class="text-7xl md:text-8xl font-bold heading-font tracking-tighter leading-none">
+                    Jhoshh<br>QH
+                </h1>
+                
+                <div class="text-4xl md:text-5xl text-blue-400 font-semibold heading-font">
+                    APSTI
+                </div>
+                
+                <p class="text-2xl text-zinc-300 max-w-md">
+                    Transformando ideas en soluciones tecnológicas innovadoras
+                </p>
+                
+                <div class="flex items-center gap-4">
+                    <a href="#contacto" 
+                       class="px-8 py-5 bg-blue-600 hover:bg-blue-700 text-lg font-semibold rounded-3xl transition-all flex items-center gap-3">
+                        <i class="fas fa-paper-plane"></i>
+                        Iniciar Proyecto
+                    </a>
+                    <a href="#proyectos" 
+                       class="px-8 py-5 border border-white/30 hover:bg-white/10 text-lg font-semibold rounded-3xl transition-all">
+                        Ver Proyectos
+                    </a>
+                </div>
+                
+                <div class="flex items-center gap-8 pt-6">
+                    <div class="flex items-center gap-2">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                        <div>
+                            <p class="text-sm text-zinc-400">LinkedIn</p>
+                            <p class="font-medium">@jhoshhqh</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fab fa-github text-2xl"></i>
+                        <div>
+                            <p class="text-sm text-zinc-400">GitHub</p>
+                            <p class="font-medium">@jhoshh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative">
+                <div class="absolute -inset-8 bg-blue-600/20 blur-3xl rounded-[4rem]"></div>
+                <div class="relative bg-zinc-900 border border-white/10 rounded-3xl p-8 glass">
+                    <img src="https://picsum.photos/id/64/800/800" 
+                         alt="Jhoshh QH" 
+                         class="w-full aspect-square object-cover rounded-2xl">
+                    <div class="absolute -bottom-6 -right-6 bg-zinc-900 border border-white/10 rounded-2xl p-6 max-w-[220px]">
+                        <div class="flex items-center gap-4">
+                            <div class="text-5xl">🚀</div>
+                            <div>
+                                <p class="text-sm text-zinc-400">Especialista en</p>
+                                <p class="text-xl font-semibold heading-font">Tecnología &amp; Innovación</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 text-zinc-500">
+            <p class="text-xs tracking-widest">SCROLL</p>
+            <i class="fas fa-chevron-down animate-bounce"></i>
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre" class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-5xl font-bold heading-font mb-8">Sobre mí</h2>
+                    <div class="space-y-6 text-zinc-300 text-lg">
+                        <p>
+                            Soy Jhoshh QH, fundador y creador de <span class="text-blue-400 font-semibold">APSTI</span>.
+                            Me apasiona convertir problemas complejos en soluciones simples y elegantes mediante la tecnología.
+                        </p>
+                        <p>
+                            Con experiencia en desarrollo de software, inteligencia artificial, automatización y estrategia digital, 
+                            ayudo a empresas y emprendedores a dar el siguiente salto tecnológico.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-12 grid grid-cols-3 gap-8">
+                        <div>
+                            <div class="text-4xl font-bold text-blue-400">5+</div>
+                            <div class="text-sm text-zinc-400 mt-1">AÑOS DE EXPERIENCIA</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold text-blue-400">40+</div>
+                            <div class="text-sm text-zinc-400 mt-1">PROYECTOS COMPLETADOS</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold text-blue-400">∞</div>
+                            <div class="text-sm text-zinc-400 mt-1">IDEAS EN PROCESO</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="glass border border-white/10 rounded-3xl p-8">
+                        <h3 class="font-semibold text-xl mb-4 flex items-center gap-3">
+                            <i class="fas fa-bolt text-yellow-400"></i>
+                            Mi enfoque
+                        </h3>
+                        <ul class="space-y-4">
+                            <li class="flex gap-4">
+                                <span class="text-blue-400 mt-1">→</span>
+                                <div>Estrategia primero, tecnología después</div>
+                            </li>
+                            <li class="flex gap-4">
+                                <span class="text-blue-400 mt-1">→</span>
+                                <div>Soluciones escalables y sostenibles</div>
+                            </li>
+                            <li class="flex gap-4">
+                                <span class="text-blue-400 mt-1">→</span>
+                                <div>Experiencia centrada en el usuario</div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="text-center text-sm text-zinc-500">
+                        “La tecnología debe ser invisible. La experiencia, inolvidable.”
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-24 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold heading-font">Servicios APSTI</h2>
+                <p class="text-zinc-400 mt-4 text-xl">Lo que puedo hacer por ti</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-black border border-white/10 rounded-3xl p-10 hover:border-blue-600/50 transition-all group">
+                    <div class="w-14 h-14 bg-blue-600/10 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-transform">💻</div>
+                    <h3 class="text-2xl font-semibold mb-3">Desarrollo Web &amp; Apps</h3>
+                    <p class="text-zinc-400">Sitios web modernos, aplicaciones web y móviles de alto rendimiento.</p>
+                </div>
+                
+                <div class="bg-black border border-white/10 rounded-3xl p-10 hover:border-blue-600/50 transition-all group">
+                    <div class="w-14 h-14 bg-purple-600/10 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-transform">🤖</div>
+                    <h3 class="text-2xl font-semibold mb-3">Inteligencia Artificial</h3>
+                    <p class="text-zinc-400">Automatizaciones, chatbots, análisis de datos y soluciones con IA.</p>
+                </div>
+                
+                <div class="bg-black border border-white/10 rounded-3xl p-10 hover:border-blue-600/50 transition-all group">
+                    <div class="w-14 h-14 bg-emerald-600/10 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-transform">📈</div>
+                    <h3 class="text-2xl font-semibold mb-3">Consultoría Digital</h3>
+                    <p class="text-zinc-400">Estrategia tecnológica, transformación digital y optimización de procesos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl font-bold heading-font text-center mb-16">Proyectos Destacados</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Proyecto 1 -->
+                <div class="group bg-zinc-900 rounded-3xl overflow-hidden">
+                    <div class="h-80 bg-zinc-800 flex items-center justify-center text-7xl">
+                        🌐
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold">Plataforma SaaS - E-commerce</h3>
+                        <p class="text-zinc-400 mt-2">Sistema completo de ventas online con IA para recomendaciones.</p>
+                        <div class="flex gap-2 mt-6">
+                            <span class="text-xs bg-white/10 px-4 py-2 rounded-full">Next.js</span>
+                            <span class="text-xs bg-white/10 px-4 py-2 rounded-full">Tailwind</span>
+                            <span class="text-xs bg-white/10 px-4 py-2 rounded-full">Supabase</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 2 -->
+                <div class="group bg-zinc-900 rounded-3xl overflow-hidden">
+                    <div class="h-80 bg-zinc-800 flex items-center justify-center text-7xl">
+                        📊
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold">Dashboard Analítico</h3>
+                        <p class="text-zinc-400 mt-2">Herramienta de visualización de datos en tiempo real para empresas.</p>
+                        <div class="flex gap-2 mt-6">
+                            <span class="text-xs bg-white/10 px-4 py-2 rounded-full">React</span>
+                            <span class="text-xs bg-white/10 px-4 py-2 rounded-full">Python</span>
+                            <span class="text-xs bg-white/10 px-4 py-2 rounded-full">D3.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-24 bg-gradient-to-b from-black to-zinc-950">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-6xl font-bold heading-font mb-6">¿Listo para tu próximo proyecto?</h2>
+            <p class="text-2xl text-zinc-400 mb-12">Hablemos y hagamos algo extraordinario juntos.</p>
+            
+            <a href="mailto:tuemail@ejemplo.com" 
+               class="inline-flex items-center gap-4 text-2xl border border-white/30 hover:border-white px-12 py-8 rounded-3xl transition-all group">
+                <span class="group-hover:underline">tuemail@ejemplo.com</span>
+                <i class="fas fa-arrow-right text-3xl"></i>
+            </a>
+            
+            <div class="mt-16 text-sm text-zinc-500">
+                Jhoshh QH © 2026 • APSTI
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Tailwind script already included
+    </script>
+</body>
+</html>
